@@ -1,15 +1,20 @@
-import java.util.HashSet;
+import java.util.*;
 
 public class Task3 {
     public static void main(String[] args) {
-        HashSet<Integer> hs = new HashSet<Integer>();
-        hs.add(5);
-        hs.add(6);
-        hs.add(6);
-        hs.add(3);
-        hs.add(8);
-        hs.add(8);
 
-        System.out.println(hs);
+        Queue<Integer> q = new PriorityQueue<>();
+
+        q.add(1);
+        q.add(2);
+        q.add(3);
+        q.add(4);
+
+        System.out.println(q);
+
+        System.out.println(q.poll());
+        System.out.println(q.poll());
+
+        System.out.println(q);
     }
 }
